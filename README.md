@@ -15,15 +15,22 @@ homebrew
 
 homebrew cask
 
+oh-my-zsh
+
 rvm
 
 ruby
 
 rails
 
-bashrc
+~~pryrc~~
 
-pryrc
+_Basic apps_
+- Alfred
+- Dash
+- Sublime Text
+- Sequel Pro
+- iTerm2
 
 # LICENSE
 
