@@ -2,7 +2,7 @@
 
 # Installation
 ```
-$ rake install
+$ ssh -c "`curl https://raw.githubusercontent.com/chankaward/beansmile-dotfiles/master/install.sh`"
 ```
 
 # Todo
