@@ -1,0 +1,30 @@
+[user]
+  name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  log = auto
+
+[push]
+  default = current
+
+[pull]
+  default = current
+
+[alias]
+  co = checkout
+  br = branch
+
+[core]
+  excludesfile = <%= ENV['HOME'] %>/.gitignore_global
+  autocrlf = input
+  editor = sublime -f
+
+[mergetool]
+  keepBackup = false
+
+[rerere]
+  enabled = true
