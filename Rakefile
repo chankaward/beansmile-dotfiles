@@ -2,11 +2,21 @@ require 'rake'
 
 desc "Install dotfiles"
 task :install do
-  install_homebrew
-  install_homebrew_packages
-  install_oh_my_zsh
-  install_zsh_syntax_highlighting
-  switch_to_zsh
+  puts "NOTICE: Before you start, make sure you connect to the VPN ;-)"
+  print "Ready? [ynq]"
+  case $stdin.gets.chomp
+  when 'y'
+    install_homebrew
+    install_homebrew_packages
+    install_basic_mac_apps
+    install_oh_my_zsh
+    install_zsh_syntax_highlighting
+    switch_to_zsh
+  when 'q'
+    exit
+  else
+    puts "Installation failed!"
+  end
 end
 
 def install_homebrew
@@ -92,4 +102,9 @@ def switch_to_zsh
       puts "skipping zsh"
     end
   end
+end
+
+def install_basic_mac_apps
+  puts "installing some awesome mac apps"
+  system %Q{brew cask install sublime-text iterm2 sequel-pro alfred spectacle gitx-rowanj google-chrome dash}
 end

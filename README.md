@@ -11,11 +11,11 @@ gitconfig
 
 gitignore_global
 
-homebrew
+~~homebrew~~
 
-homebrew cask
+~~homebrew cask~~
 
-oh-my-zsh
+~~oh-my-zsh~~
 
 rvm
 
@@ -25,12 +25,16 @@ rails
 
 ~~pryrc~~
 
-_Basic apps_
+### Basic apps
 - Alfred
 - Dash
 - Sublime Text
 - Sequel Pro
 - iTerm2
+- spectacle
+- gitx
+- Chrome
+- Dash
 
 # LICENSE
 
