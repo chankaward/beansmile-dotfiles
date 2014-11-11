@@ -24,6 +24,7 @@ def install_homebrew_packages
   when 'y'
     puts "installing homebrew packages"
     system %Q{brew install autojump git mysql node imagemagick git-extras}
+    system %Q{brew install caskroom/cask/brew-cask}
   when 'q'
     exit
   else
