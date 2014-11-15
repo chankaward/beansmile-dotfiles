@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ ! -d "$HOME/.dotfiles" ]; then
   echo "Installing Beansmile dotfiles for the first time!"
   git clone git@github.com:chankaward/beansmile-dotfiles.git "$HOME/.dotfiles"
