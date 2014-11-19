@@ -12,6 +12,7 @@ task :install do
     install_oh_my_zsh
     install_zsh_syntax_highlighting
     switch_to_zsh
+    install_rvm
   when 'q'
     exit
   else
@@ -107,4 +108,13 @@ end
 def install_basic_mac_apps
   puts "installing some awesome mac apps"
   system %Q{brew cask install sublime-text iterm2 sequel-pro alfred spectacle gitx-rowanj google-chrome dash}
+end
+
+def install_rvm
+  if File.exist?(File.join(ENV['HOME'], ".rvm"))
+    puts "already have rvm"
+  else
+    puts "install rvm"
+    system %Q{'zsh' < rvm.sh}
+  end
 end

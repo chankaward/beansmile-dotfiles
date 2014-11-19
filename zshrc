@@ -85,6 +85,10 @@ export EDITOR=sublime
 # load homebrew git
 export PATH=/usr/local/bin:$PATH
 
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 # deploy alias
 alias deploy-staging="cap staging deploy"
 alias deploy-staging-migrations="cap staging deploy:migrations"
